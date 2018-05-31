@@ -25,7 +25,7 @@ public class App {
 	@PostConstruct
 	public void setupDbWithData(){
 		Trainer trainer= new Trainer("John Gordon", null);
-		trainer.setSkills(Arrays.asList(new Skill("Java EE"), new Skill("DB")));
+		trainer.setSkills(Arrays.asList(new Skill("JavaEE"), new Skill("DB")));
 		trainer= trainerRepository.save(trainer);
 	}
 }
